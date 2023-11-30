@@ -1,0 +1,172 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body{
+background-color: black;
+font-family: verdana, sans-serif;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+color: white;
+}
+
+
+#banner{
+padding: 20px;
+Background-color: gold;
+text-align: center;
+}
+
+
+#banner h2, #main-content h2, footer h2{
+color: purple;
+}
+
+
+#banner .delivery-text {
+color: black;
+}
+
+
+#main-content{
+display: flex;
+flex: 1;
+Background-color: black;
+}
+
+
+.column{
+padding: 10px;
+flex: 1;
+}
+
+
+
+#left-column article, #right-column article {
+background-color: grey;
+margin: 10px;
+padding: 20px;
+border: 2px solid white;
+margin-bottom: 10px;
+}
+
+#left-column article:last-child{
+margin-bottom: 0;
+}
+
+
+#right-column {
+display: flex;
+flex-direction: column;
+flex: 1;
+margin: 10px;
+}
+
+
+#right-column article{
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background-color: grey;
+border: 2px solid white;
+padding: 20px;
+margin-bottom: 10px;
+}
+
+
+#right-column #promotion{
+flex: 1;
+}
+
+
+#right-column #foods{
+flex: 1;
+}
+
+
+ul{
+list-style-type: none;
+padding: 0;
+}
+
+
+footer {
+background-color: black;
+padding: 20px;
+Text-align: center;
+margin-top: auto;
+}
+
+
+footer h2{
+color: purple;
+}
+
+
+.link, a{
+color: blue;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+.link:hover, a:hover {
+text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 575px) {
+#main-content {
+flex-direction: column;
+}
+
+.column {
+width: 100%;
+}
+
+#right-column {
+display: flex
+flex-direction: column;
+Flex: 1;
+justify-content: space-between;
+}
+
+ #right-column article {
+margin: 10px 0;
+    }
+
+#right-column h2 {
+font-size: 1em;
+}
+
+#right-column p {
+font-size: 0.8em;
+margin-bottom: 1em;
+line-height: 1.6;
+ /* external sheet made my html look nice and presntable but omg css is horrid*/
+}
+
+
+article p {
+margin-bottom: 1em;
+font-size: 1.2em; 
+line-height: 1.6;
+}
+
+#logo-container {
+position: absolute;
+bottom: 0;
+left: 0;
+margin: 10px;
+}
+
+#logo-container img {
+height: 50%;
+width: auto;
+}
+
